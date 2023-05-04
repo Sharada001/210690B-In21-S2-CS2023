@@ -47,13 +47,18 @@ void displayArray(int arr[], int n)
 // main program
 int main()
 {
-   int heap_arr[] = {4,17,3,12,9,6};
+   // int heap_arr[] = {10,13,12,20,13};
+   // int heap_arr[] = {3,12,7,20,2,1,7,13,16,18,5,6};
+   // int heap_arr[] = {5,17,16,18,2,1,8,16,11,18,5,6,12,15,4,2,14,9,6};
+   int heap_arr[] = {4,17,11,20,2,1,8,16,13,18,5,6,19,15,4,3,12,9,6,2,0,5,18,14,10};
    int n = sizeof(heap_arr)/sizeof(heap_arr[0]);
+   cout << endl;
    cout<<"Input array"<<endl;
    displayArray(heap_arr,n);
-  
+
    heapSort(heap_arr, n);
   
    cout << "Sorted array"<<endl;
    displayArray(heap_arr, n);
+   cout << endl;
 }
