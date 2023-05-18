@@ -38,6 +38,15 @@ struct Graph{
         }
     }
 
+    void addEdgeDirected(int from, int to){
+        //select node 'from' and push 'to' into u's neighbour
+        for(int i=0;i<n;i++){
+            if (nodes[i].label==from) {
+                nodes[i].neighbours.push_back(to);
+            }
+        }
+    }
+
     void print(){
         //lets iterate through each node and print its neighbours
         for(int i=0;i<n;i++){
